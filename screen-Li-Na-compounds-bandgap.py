@@ -78,7 +78,7 @@ def search_li_na_conductors():
         print(f"Saved CIF for {formula}, Material ID: {material_id}, Band Gap: {band_gap} (saved in '{all_output_folder}')")
 
         # Check if the band gap is greater than 2 eV for large bandgap materials
-        if band_gap and band_gap > 4.5:
+        if band_gap and band_gap > 2.0:
             large_bandgap_materials.append(material)
             # Writing CIF file for large bandgap materials
             large_cif_file_name = os.path.join(large_bandgap_folder, f"{formula}_{material_id}.cif")
